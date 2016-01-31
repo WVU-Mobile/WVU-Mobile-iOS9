@@ -47,6 +47,7 @@
 		44A63DC01AD6E855009060F5 /* iPhone6+.png in Resources */ = {isa = PBXBuildFile; fileRef = 44A63DBF1AD6E855009060F5 /* iPhone6+.png */; };
 		44AB40BE1ACB2B9400182A31 /* dstops.png in Resources */ = {isa = PBXBuildFile; fileRef = 44AB40BD1ACB2B9400182A31 /* dstops.png */; };
 		44AB40C01ACB2BA700182A31 /* stops.png in Resources */ = {isa = PBXBuildFile; fileRef = 44AB40BF1ACB2BA700182A31 /* stops.png */; };
+		44B1D4791C5E9E5F000E64FC /* follow.png in Resources */ = {isa = PBXBuildFile; fileRef = 44B1D4781C5E9E5F000E64FC /* follow.png */; };
 		44B66A041AD0369500FCECA8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44B66A031AD0369500FCECA8 /* CFNetwork.framework */; };
 		44B9A9E01AD213A500AAAD18 /* PRTTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B9A9DF1AD213A500AAAD18 /* PRTTableViewController.swift */; };
 		44F3991F1ABF50BD000A0811 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44F3991E1ABF50BD000A0811 /* AVFoundation.framework */; };
@@ -145,6 +146,7 @@
 		44A63DBF1AD6E855009060F5 /* iPhone6+.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone6+.png"; sourceTree = "<group>"; };
 		44AB40BD1ACB2B9400182A31 /* dstops.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dstops.png; sourceTree = "<group>"; };
 		44AB40BF1ACB2BA700182A31 /* stops.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stops.png; sourceTree = "<group>"; };
+		44B1D4781C5E9E5F000E64FC /* follow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = follow.png; sourceTree = "<group>"; };
 		44B669EF1AD0344A00FCECA8 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		44B669F01AD0344A00FCECA8 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		44B66A011AD0368900FCECA8 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -431,6 +433,7 @@
 			isa = PBXGroup;
 			children = (
 				449ED7751B72C5360071D2A3 /* walking.png */,
+				44B1D4781C5E9E5F000E64FC /* follow.png */,
 				4409A9321B718FE000453C0B /* filler.jpg */,
 				9C24B2671B2762D2008EFBB7 /* twitterInfo.png */,
 				44A63DBF1AD6E855009060F5 /* iPhone6+.png */,
@@ -630,6 +633,7 @@
 				9C69CE0F1B7136AE0017A1E8 /* 30 - West Run.txt in Resources */,
 				442868B91A965A6900B59686 /* stop.png in Resources */,
 				4407B8781ACDC33200135960 /* LaunchScreen.xib in Resources */,
+				44B1D4791C5E9E5F000E64FC /* follow.png in Resources */,
 				9C69CE0E1B7136AE0017A1E8 /* 29 - Grey Line.txt in Resources */,
 				9C1D9FEC1ADDAC140031BC7F /* like.png in Resources */,
 				443AA7141A964DE6008C99C2 /* yield.png in Resources */,
