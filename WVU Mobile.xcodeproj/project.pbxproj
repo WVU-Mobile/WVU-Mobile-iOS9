@@ -32,7 +32,6 @@
 		443AA7141A964DE6008C99C2 /* yield.png in Resources */ = {isa = PBXBuildFile; fileRef = 443AA7131A964DE6008C99C2 /* yield.png */; };
 		4445A05C1A82C4DE00D5C97B /* UIColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4445A05B1A82C4DE00D5C97B /* UIColors.swift */; };
 		444618381A8AEC14004BDF55 /* PRTJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444618371A8AEC14004BDF55 /* PRTJSON.swift */; };
-		4446F7941AD5C256009E0652 /* follow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4446F7931AD5C256009E0652 /* follow.png */; };
 		444F66531ABA0EFD00846F3A /* Info.png in Resources */ = {isa = PBXBuildFile; fileRef = 444F66521ABA0EFD00846F3A /* Info.png */; };
 		447D9E491A831A0F0070C240 /* DiningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447D9E481A831A0F0070C240 /* DiningViewController.swift */; };
 		447D9E4B1A8320E10070C240 /* CenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447D9E4A1A8320E10070C240 /* CenterViewController.swift */; };
@@ -129,7 +128,6 @@
 		443AA7131A964DE6008C99C2 /* yield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yield.png; sourceTree = "<group>"; };
 		4445A05B1A82C4DE00D5C97B /* UIColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColors.swift; path = DrawerController/UIColors.swift; sourceTree = "<group>"; };
 		444618371A8AEC14004BDF55 /* PRTJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PRTJSON.swift; path = DrawerController/PRTJSON.swift; sourceTree = "<group>"; };
-		4446F7931AD5C256009E0652 /* follow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = follow.png; path = ../follow.png; sourceTree = "<group>"; };
 		444F66521ABA0EFD00846F3A /* Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Info.png; sourceTree = "<group>"; };
 		4467E26A1AD86C8600EFA4A3 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
 		4467E26C1AD86CF600EFA4A3 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
@@ -436,7 +434,6 @@
 				4409A9321B718FE000453C0B /* filler.jpg */,
 				9C24B2671B2762D2008EFBB7 /* twitterInfo.png */,
 				44A63DBF1AD6E855009060F5 /* iPhone6+.png */,
-				4446F7931AD5C256009E0652 /* follow.png */,
 				9C1D9FEB1ADDAC140031BC7F /* like.png */,
 				44AB40BD1ACB2B9400182A31 /* dstops.png */,
 				44AB40BF1ACB2BA700182A31 /* stops.png */,
@@ -634,7 +631,6 @@
 				442868B91A965A6900B59686 /* stop.png in Resources */,
 				4407B8781ACDC33200135960 /* LaunchScreen.xib in Resources */,
 				9C69CE0E1B7136AE0017A1E8 /* 29 - Grey Line.txt in Resources */,
-				4446F7941AD5C256009E0652 /* follow.png in Resources */,
 				9C1D9FEC1ADDAC140031BC7F /* like.png in Resources */,
 				443AA7141A964DE6008C99C2 /* yield.png in Resources */,
 				9C69CE091B7136AE0017A1E8 /* 12 - Blue Line.txt in Resources */,
