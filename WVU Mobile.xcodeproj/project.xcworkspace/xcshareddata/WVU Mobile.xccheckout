@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>494279F7-793B-4A53-83F1-5F0F870481D1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WVU Mobile</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>629540C8270DD475EADCE6632B640555EF7E914E</key>
+		<string>https://github.com/WVU-Mobile/WVU-Mobile-iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WVU Mobile.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>629540C8270DD475EADCE6632B640555EF7E914E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/WVU-Mobile/WVU-Mobile-iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>629540C8270DD475EADCE6632B640555EF7E914E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>629540C8270DD475EADCE6632B640555EF7E914E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WVU-Mobile-iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>

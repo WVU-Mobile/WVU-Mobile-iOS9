@@ -1,0 +1,25 @@
+PODS:
+  - Bolts/Tasks (1.6.0)
+  - Fabric (1.6.3)
+  - GoogleMaps (1.11.1)
+  - Parse (1.12.0):
+    - Bolts/Tasks (~> 1.5)
+  - TwitterCore (1.15.1):
+    - Fabric
+  - TwitterKit (1.15.1):
+    - TwitterCore (= 1.15.1)
+
+DEPENDENCIES:
+  - GoogleMaps (~> 1.10)
+  - Parse
+  - TwitterKit
+
+SPEC CHECKSUMS:
+  Bolts: f52a250053bb517ca874523c3913776359ab3def
+  Fabric: cbe0ca6c9531bba17910052f6f105fcbc5fa7f67
+  GoogleMaps: c947160008f414c66707a5ea60f35e92055c7670
+  Parse: de2c52a9a1421b91ae7594ab8ce191afd184f19b
+  TwitterCore: 12983a7464e34afbbf18881347898a9db526ac71
+  TwitterKit: b5821570887ec2d77650fa232eaec175665dc443
+
+COCOAPODS: 0.39.0
