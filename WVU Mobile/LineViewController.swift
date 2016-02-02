@@ -80,7 +80,7 @@ class LineViewController: MainViewController, UITableViewDelegate, UITableViewDa
     }
     
     func twitterButton() {
-        let infoImage = UIImage(named: "twitterInfo.png")
+        let infoImage = UIImage(named: "twitterInfo")
         
         let infoView = UIImageView(frame: CGRectMake(0, 0, 27, 27))
         infoView.image = infoImage
@@ -178,10 +178,10 @@ class LineViewController: MainViewController, UITableViewDelegate, UITableViewDa
             cell.textLabel?.text = line.stops[indexPath.row-1]
             cell.textLabel?.font = UIFont(name: "HelveticaNeue-Light", size: 14)
             if !NSUserDefaults.standardUserDefaults().boolForKey("nightMode") {
-                cell.imageView?.image = UIImage(named: "stops.png")
+                cell.imageView?.image = UIImage(named: "stops")
             }
             else {
-                cell.imageView?.image = UIImage(named: "dstops.png")
+                cell.imageView?.image = UIImage(named: "dstops")
             }
         }
         return cell

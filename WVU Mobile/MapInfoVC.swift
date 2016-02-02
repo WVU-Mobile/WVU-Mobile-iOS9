@@ -266,7 +266,7 @@ class MapInfoVC: MainViewController, UITableViewDelegate, UITableViewDataSource{
     }
     
     func walkingButton() {
-        let infoImage = UIImage(named: "walking.png")
+        let infoImage = UIImage(named: "walking")
         
         
         let infoView = UIImageView(frame: CGRectMake(0, 0, 27, 27))

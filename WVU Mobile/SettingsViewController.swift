@@ -15,8 +15,8 @@ class SettingsViewController: CenterViewController, UITableViewDelegate, UITable
     
     var nightSwitch = UISwitch(frame: CGRectMake(150, 300, 0, 0))
     
-    let facebookImage = UIImage(named: "like.png")
-    let twitterImage = UIImage(named: "follow.png")
+    let facebookImage = UIImage(named: "like")
+    let twitterImage = UIImage(named: "follow")
     
     let rickyButton = UIButton(type: UIButtonType.Custom)
     let kateButton = UIButton(type: UIButtonType.Custom)

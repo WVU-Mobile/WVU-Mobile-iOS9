@@ -41,13 +41,6 @@ class DiningViewController: CenterViewController, UITableViewDelegate, UITableVi
                             "Sbarro",
                             "Taziki's"]
     */
-    
-    var pictures: [String] = ["brookeCrest.jpg",
-                              "summitCrest.jpg",
-                              "arnoldCrest.jpg",
-                              "boremanCrest.jpg",
-                              "stalnakerCrest.jpg",
-                              "hatfields.jpg"]
 
     override func viewDidLoad() {
         self.title = "Dining"
@@ -84,7 +77,7 @@ class DiningViewController: CenterViewController, UITableViewDelegate, UITableVi
     }
     
     func mountyBountyButton(){
-        let infoImage = UIImage(named: "Info.png")
+        let infoImage = UIImage(named: "Info")
         
         let infoView = UIImageView(frame: CGRectMake(0, 0, 27, 27))
         infoView.image = infoImage
@@ -173,16 +166,12 @@ class DiningViewController: CenterViewController, UITableViewDelegate, UITableVi
 
         if indexPath.section == 0 {
             cell.textLabel?.text = self.labels[indexPath.row]
-            //cell.imageView?.image = UIImage(named: pictures[indexPath.row])
             
             cell.detailTextLabel?.textColor = colors.textColor
             cell.detailTextLabel?.text = self.campus[indexPath.row]
             cell.detailTextLabel?.font = UIFont(name: "HelveticaNeue-LightItalic", size: 16)
         }
-        else {
-            //cell.textLabel?.text = self.retail[indexPath.row]
-            cell.imageView?.image = UIImage(named: pictures[indexPath.row])
-        }
+
         return cell
     }
     

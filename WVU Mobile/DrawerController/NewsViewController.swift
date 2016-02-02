@@ -22,7 +22,7 @@ class NewsViewController: CenterViewController, UITableViewDelegate, UITableView
         /*
         Change back bar button to custom text, while preserving the back arrow.
         */
-        let backItem = UIBarButtonItem(title: "", style: .Bordered, target: nil, action: nil)
+        let backItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
         navigationItem.backBarButtonItem = backItem
         
         /*
@@ -124,7 +124,7 @@ class NewsViewController: CenterViewController, UITableViewDelegate, UITableView
         formatter.dateStyle = NSDateFormatterStyle.FullStyle
 
         cell.textLabel?.textColor = colors.subtitleTextColor
-        //cell.textLabel?.text = formatter.stringFromDate(date!)
+        cell.textLabel?.text = formatter.stringFromDate(date!)
         cell.textLabel?.font = UIFont(name: "HelveticaNeue-Medium", size: 13)
         cell.textLabel?.numberOfLines = 1
     

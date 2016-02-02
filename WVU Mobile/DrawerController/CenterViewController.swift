@@ -17,7 +17,7 @@ class CenterViewController: MainViewController {
     
     // Set up left menu button.
     func setupLeftMenuButton() {
-        let menuImage = UIImage(named: "Menu.png")
+        let menuImage = UIImage(named: "Menu")
 
         let menuView = UIImageView(frame: CGRectMake(0, 0, 30, 30))
         menuView.image = menuImage

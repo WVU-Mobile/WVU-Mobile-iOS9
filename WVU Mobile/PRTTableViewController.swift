@@ -56,25 +56,25 @@ class PRTTableViewController: CenterViewController, UITableViewDelegate, UITable
             // PRT Okay
         case "1":
             backgroundColor = self.colors.green
-            image = UIImage(named: "check.png")!
+            image = UIImage(named: "check")!
             statusText = "O N L I N E"
             statusTextColor = self.colors.green
             // PRT Partially down
         case "2", "5", "6", "10":
             backgroundColor = self.colors.orange
-            image = UIImage(named: "yield.png")!
+            image = UIImage(named: "yield")!
             statusText = "W A R N I N G"
             statusTextColor = self.colors.orange
             // PRT Out of Service
         case "4", "8", "9":
             backgroundColor = self.colors.red
-            image = UIImage(named: "stop.png")!
+            image = UIImage(named: "stop")!
             statusText = "O F F L I N E"
             statusTextColor = self.colors.pink
             // Default to 1
         default:
             backgroundColor = self.colors.orange
-            image = UIImage(named: "yield.png")!
+            image = UIImage(named: "yield")!
             statusText = "E R R O R"
             statusTextColor = self.colors.orange
         }
