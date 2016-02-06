@@ -152,7 +152,7 @@ class PRTTableViewController: CenterViewController, UITableViewDelegate, UITable
             // Hours
         case 3:
             cell.backgroundColor = self.colors.mainViewColor
-            cell.textLabel?.text = "Monday to Friday 6:30 AM to 10:15 PM \nSaturday 9:30 AM to 5 PM \nSunday CLOSED"
+            cell.textLabel?.text = "Monday to Friday 7:00 AM to 8:00 PM \nSaturday CLOSED \nSunday CLOSED"
             cell.textLabel?.textColor = self.colors.textColor
             cell.textLabel?.textAlignment = .Center
             cell.textLabel?.font = UIFont(name: "HelveticaNeue-Thin", size: 17)
