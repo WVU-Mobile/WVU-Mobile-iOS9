@@ -107,7 +107,9 @@ class MapViewController: CenterViewController, CLLocationManagerDelegate, GMSMap
         mapCoordinate(code: "USC-E", name: "University Services Center", latitude: 39.654098, longitude: -79.968307),
         mapCoordinate(code: "VNB-D", name: "Vandalia Blue", latitude: 39.638916, longitude: -79.951788),
         mapCoordinate(code: "VNG-D", name: "Vandalia Gold", latitude: 39.638038, longitude: -79.951686),
-        mapCoordinate(code: "WHI-D", name: "White Hall", latitude: 39.632882, longitude: -79.954649)]
+        mapCoordinate(code: "WHI-D", name: "White Hall", latitude: 39.632882, longitude: -79.954649),
+        //EVC-E Evansdale Crossing
+        mapCoordinate(code: "EVC-E", name: "Evansdale Crossing", latitude: 39.647872, longitude: -79.973245)]
     
     var housingCoords: Array <mapCoordinate>  = [
         mapCoordinate(code: "STL-D", name: "Stalnaker Hall", latitude: 39.635324, longitude: -79.952693),
@@ -125,7 +127,8 @@ class MapViewController: CenterViewController, CLLocationManagerDelegate, GMSMap
         mapCoordinate(code: "BRF-D", name: "Boreman Residential Facility", latitude: 39.632973, longitude: -79.952183),
         mapCoordinate(code: "BRT-E", name: "Brooke Tower", latitude: 39.648985, longitude: -79.965791),
         mapCoordinate(code: "BTT-E", name: "Bennett Tower", latitude: 39.648217, longitude: -79.967014),
-        mapCoordinate(code: "ARN-D", name: "Arnold Hall", latitude: 39.632486, longitude: -79.950469)]
+        mapCoordinate(code: "ARN-D", name: "Arnold Hall", latitude: 39.632486, longitude: -79.950469),
+        mapCoordinate(code: "", name: "University Park", latitude: 39.650447, longitude: -79.962131)]
     
     var parkingCoords: Array <mapCoordinate> = [
         mapCoordinate(code: "ST2", name: "Mountainlair Parking Garage - ST2", latitude: 39.63390982, longitude: -79.95299488),
@@ -138,8 +141,7 @@ class MapViewController: CenterViewController, CLLocationManagerDelegate, GMSMap
         //mapCoordinate(code: "ST9-E", name: "CAC Public Parking", latitude: 39.648516, longitude: -79.973899),
         mapCoordinate(code: "Greenhouse Public Parking", name: "Public Parking - ST6", latitude: 39.64504699, longitude: -79.96659368),
         mapCoordinate(code: "Ag Sciences", name: "Public Parking - ST4", latitude: 39.64623248, longitude: -79.96853024),
-        mapCoordinate(code: "Greenhouse", name: "Public Parking - ST1", latitude: 39.64411345, longitude: -79.97030586),
-
+        mapCoordinate(code: "Greenhouse", name: "Public Parking - ST1", latitude: 39.64411345, longitude: -79.97030586)
     ]
 
     var prtCoords: Array <mapCoordinate> = [

@@ -10,9 +10,7 @@
 		23B14B1168AC1897C0D0C91C /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCED4A8BB3D67EF2A3848DF /* Pods.framework */; };
 		44033CE11A7C3C9B0007C0CE /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44033CE01A7C3C9B0007C0CE /* MenuViewController.swift */; };
 		4407B8781ACDC33200135960 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4407B8771ACDC33200135960 /* LaunchScreen.xib */; };
-		4407B87E1ACE150000135960 /* EventsDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4407B87D1ACE150000135960 /* EventsDetailVC.swift */; };
 		440AF29B1AA69753006C30D4 /* RSSParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440AF29A1AA69753006C30D4 /* RSSParser.swift */; };
-		440AF29F1AA69A73006C30D4 /* FeedPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440AF29E1AA69A73006C30D4 /* FeedPageViewController.swift */; };
 		440AF2A11AA69A92006C30D4 /* WebPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440AF2A01AA69A92006C30D4 /* WebPageViewController.swift */; };
 		4411615B1A968A7D0034D101 /* DiningJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4411615A1A968A7D0034D101 /* DiningJSON.swift */; };
 		441C60DE1ACAFA51002CBE3F /* LineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441C60DD1ACAFA51002CBE3F /* LineViewController.swift */; };
@@ -90,9 +88,7 @@
 		081D40DDCC741F7835717FBC /* Pods-WVU Mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WVU Mobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WVU Mobile/Pods-WVU Mobile.debug.xcconfig"; sourceTree = "<group>"; };
 		44033CE01A7C3C9B0007C0CE /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuViewController.swift; path = ../MenuViewController.swift; sourceTree = "<group>"; };
 		4407B8771ACDC33200135960 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LaunchScreen.xib; path = ../LaunchScreen.xib; sourceTree = "<group>"; };
-		4407B87D1ACE150000135960 /* EventsDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsDetailVC.swift; sourceTree = "<group>"; };
 		440AF29A1AA69753006C30D4 /* RSSParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSSParser.swift; sourceTree = "<group>"; };
-		440AF29E1AA69A73006C30D4 /* FeedPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedPageViewController.swift; path = ../FeedPageViewController.swift; sourceTree = "<group>"; };
 		440AF2A01AA69A92006C30D4 /* WebPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebPageViewController.swift; sourceTree = "<group>"; };
 		4411615A1A968A7D0034D101 /* DiningJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiningJSON.swift; path = ../DiningJSON.swift; sourceTree = "<group>"; };
 		441C60DD1ACAFA51002CBE3F /* LineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineViewController.swift; sourceTree = "<group>"; };
@@ -203,7 +199,6 @@
 			isa = PBXGroup;
 			children = (
 				447D9E561A8324970070C240 /* NewsViewController.swift */,
-				440AF29E1AA69A73006C30D4 /* FeedPageViewController.swift */,
 			);
 			name = News;
 			path = DrawerController;
@@ -269,7 +264,6 @@
 			isa = PBXGroup;
 			children = (
 				447D9E541A8323A20070C240 /* EventsViewController.swift */,
-				4407B87D1ACE150000135960 /* EventsDetailVC.swift */,
 				443055011AAE0925002419EC /* Events.swift */,
 				443054FE1AAE0562002419EC /* EventObject.swift */,
 			);
@@ -656,9 +650,7 @@
 				9C534C721A79876500B2335F /* DrawerController.swift in Sources */,
 				441F2FBA1A9FA7FF00974A15 /* HatfieldsVC.swift in Sources */,
 				44879CD41A7D609A00A30EDF /* ViewController.swift in Sources */,
-				4407B87E1ACE150000135960 /* EventsDetailVC.swift in Sources */,
 				4424A7F91B6DB1F7001744F1 /* MapInfoVC.swift in Sources */,
-				440AF29F1AA69A73006C30D4 /* FeedPageViewController.swift in Sources */,
 				9C534C731A79876500B2335F /* DrawerVisualState.swift in Sources */,
 				448245F21AB743FE008F7918 /* MainViewController.swift in Sources */,
 				449EC1301AC0DE6F006110C6 /* MapsJSON.swift in Sources */,
@@ -816,8 +808,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Kaitlyn Landmesser (U9LEH7T7NL)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kaitlyn Landmesser (U9LEH7T7NL)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "WVU Mobile/Info.plist";
@@ -844,8 +836,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Kaitlyn Landmesser (U9LEH7T7NL)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kaitlyn Landmesser (U9LEH7T7NL)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "WVU Mobile/Info.plist";

@@ -219,16 +219,9 @@ class EventsViewController: CenterViewController, UITableViewDelegate, UITableVi
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let event = selectedEvents.objectAtIndex(indexPath.row) as! EventObject
         
-        // Instance of our feedpageviewcontrolelr
-        let fpvc = EventsDetailVC()
-        
-        fpvc.selectedFeedTitle = event.title
-        fpvc.selectedFeedFeedContent = event.descrip
-        fpvc.selectedFeedURL = event.link
-        fpvc.date = event.startDate
-        fpvc.time = event.time
-        
-        self.navigationController?.pushViewController(fpvc, animated: true)
+        let feedPage = WebPageViewController()
+        feedPage.url = event.link
+        self.navigationController?.pushViewController(feedPage, animated: true)
         tableView.cellForRowAtIndexPath(indexPath)?.selected = false
     }
     

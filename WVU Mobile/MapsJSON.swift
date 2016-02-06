@@ -52,6 +52,9 @@ class MapsJSON {
             urlPath = "http://beta.campusmap.wvu.edu/api.json?api=true&alpha=\(name)"
         } else if (code == "SPH-D") {
             urlPath = "http://beta.campusmap.wvu.edu/api.json?api=true&alpha=Spruce%20house"
+        } else if (code == "") {
+            name = name.stringByReplacingOccurrencesOfString(" ", withString: "%20")
+            urlPath = "http://beta.campusmap.wvu.edu/api.json?api=true&alpha=\(name)"
         }
         
         let url = NSURL(string: urlPath)!

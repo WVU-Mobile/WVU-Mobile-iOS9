@@ -145,20 +145,11 @@ class NewsViewController: CenterViewController, UITableViewDelegate, UITableView
     }
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let selectedFTitle: String = feed[indexPath.row].objectForKey("title") as! String
-        let selectedFContent: String = feed[indexPath.row].objectForKey("description") as! String
         let selectedFURL: String = feed[indexPath.row].objectForKey("link") as! String
-        let selectedFDate: String = feed[indexPath.row].objectForKey("pubDate") as! String
         
-        // Instance of our feedpageviewcontrolelr
-        let fpvc = FeedPageViewController()
-        
-        fpvc.selectedFeedTitle = selectedFTitle
-        fpvc.selectedFeedFeedContent = selectedFContent
-        fpvc.selectedFeedURL = selectedFURL
-        fpvc.date = selectedFDate
-        
-        self.navigationController?.pushViewController(fpvc, animated: true)
+        let feedPage = WebPageViewController()
+        feedPage.url = selectedFURL
+        self.navigationController?.pushViewController(feedPage, animated: true)
         self.tableView.cellForRowAtIndexPath(indexPath)?.selected = false
     }
     
