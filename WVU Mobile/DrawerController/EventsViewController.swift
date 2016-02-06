@@ -221,6 +221,8 @@ class EventsViewController: CenterViewController, UITableViewDelegate, UITableVi
         
         let feedPage = WebPageViewController()
         feedPage.url = event.link
+        feedPage.article = event.title
+        
         self.navigationController?.pushViewController(feedPage, animated: true)
         tableView.cellForRowAtIndexPath(indexPath)?.selected = false
     }

@@ -8,21 +8,24 @@
 
 import UIKit
 
-class WebPageViewController: MainViewController, NSURLConnectionDelegate {
+class WebPageViewController: MainViewController, NSURLConnectionDelegate{
     
     var url = ""
     var webView: UIWebView!
-    
+    var article = ""
+
     override func viewDidLoad() {
         webView = UIWebView(frame: self.view.bounds)
         
         url = url.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
         url = url.stringByReplacingOccurrencesOfString("\n", withString: "", options: .LiteralSearch, range: nil)
         
-        print(url)
         let requestURL = NSURL(string:url)
         let request = NSURLRequest(URL: requestURL!)
         webView.loadRequest(request)
+        
+        let shareButton: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Action, target: self, action: "share")
+        self.navigationItem.rightBarButtonItem = shareButton
         
         self.view.addSubview(webView)
         super.viewDidLoad()
@@ -47,5 +50,14 @@ class WebPageViewController: MainViewController, NSURLConnectionDelegate {
     override func viewWillDisappear(animated: Bool) {
         self.evo_drawerController?.setupGestureRecognizers()
         super.viewWillDisappear(true)
+    }
+    
+    func share () {
+        displayShareSheet("[WVU Mobile] \(article)")
+    }
+    
+    func displayShareSheet(shareContent:String) {
+        let activityViewController = UIActivityViewController(activityItems: [shareContent, NSURL(string: url)!], applicationActivities: nil)
+        presentViewController(activityViewController, animated: true, completion: {})
     }
 }

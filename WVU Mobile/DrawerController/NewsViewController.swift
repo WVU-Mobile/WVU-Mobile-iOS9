@@ -145,10 +145,13 @@ class NewsViewController: CenterViewController, UITableViewDelegate, UITableView
     }
 
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let selectedFURL: String = feed[indexPath.row].objectForKey("link") as! String
-        
+        let url: String = feed[indexPath.row].objectForKey("link") as! String
+        let article: String = feed[indexPath.row].objectForKey("title") as! String
+
         let feedPage = WebPageViewController()
-        feedPage.url = selectedFURL
+        feedPage.url = url
+        feedPage.article = article
+        
         self.navigationController?.pushViewController(feedPage, animated: true)
         self.tableView.cellForRowAtIndexPath(indexPath)?.selected = false
     }
