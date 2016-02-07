@@ -49,10 +49,9 @@ class SettingsViewController: CenterViewController, UITableViewDelegate, UITable
         tableView.showsVerticalScrollIndicator = false
         
         // Set up Night Mode Switch
-        self.nightSwitch.on = NSUserDefaults.standardUserDefaults().boolForKey("nightMode")
-        self.nightSwitch.setOn(NSUserDefaults.standardUserDefaults().boolForKey("nightMode"), animated: NSUserDefaults.standardUserDefaults().boolForKey("nightMode"))
         self.nightSwitch.addTarget(self, action: "nightSwitchValueDidChange:", forControlEvents: .ValueChanged)
         self.nightSwitch.onTintColor = colors.switchColor
+        self.nightSwitch.on = NSUserDefaults.standardUserDefaults().boolForKey("nightMode")
 
         // Set up Ricky Button
         rickyButton.frame = CGRectMake(100, 100, 100, 40)
@@ -197,7 +196,7 @@ class SettingsViewController: CenterViewController, UITableViewDelegate, UITable
             return 1
         }
         else if section == 1 {
-            return 5
+            return 3
         }
         else if section == 2 {
             return 2
@@ -288,19 +287,6 @@ class SettingsViewController: CenterViewController, UITableViewDelegate, UITable
             cell.textLabel?.textColor = colors.textColor
             cell.accessoryView = jeremyButton
         }
-        else if indexPath.row == 3 && indexPath.section == 1 {
-            cell.selectionStyle = .None
-            cell.backgroundColor = colors.cellColor
-            cell.textLabel?.text = "Corey"
-            cell.textLabel?.textColor = colors.textColor
-            cell.accessoryView = coreyButton
-        }
-        else if indexPath.row == 4 && indexPath.section == 1 {
-            cell.selectionStyle = .None
-            cell.backgroundColor = colors.cellColor
-            cell.textLabel?.text = "Thomas"
-            cell.textLabel?.textColor = colors.textColor
-        }
         else if indexPath.row == 0 && indexPath.section == 2 {
             cell.selectionStyle = .None
             cell.backgroundColor = colors.cellColor
@@ -329,6 +315,7 @@ class SettingsViewController: CenterViewController, UITableViewDelegate, UITable
     override func setUIColors() {
         self.tableView.backgroundColor = colors.menuViewColor
         self.tableView.reloadData()
+        self.nightSwitch.on = NSUserDefaults.standardUserDefaults().boolForKey("nightMode")
         super.setUIColors()
     }
     

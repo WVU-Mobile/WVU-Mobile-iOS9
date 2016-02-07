@@ -238,13 +238,13 @@ class MapInfoVC: MainViewController, UITableViewDelegate, UITableViewDataSource{
         var formattedMinutes = ""
         
         if rounded == 0 {
-            formattedMinutes = "(Less than 1 minute walk)"
+            formattedMinutes = "Estimate not available."
         } else if rounded == 1 {
             formattedMinutes = "(1 minute walk)"
         } else if rounded > 1 {
             formattedMinutes = "(" + String(rounded) + " minute walk)"
         } else {
-            formattedMinutes = "Walking estimate not available."
+            formattedMinutes = "Estimate not available."
         }
         return formattedMinutes
     }

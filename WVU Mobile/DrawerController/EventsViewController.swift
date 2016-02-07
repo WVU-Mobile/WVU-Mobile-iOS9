@@ -230,7 +230,7 @@ class EventsViewController: CenterViewController, UITableViewDelegate, UITableVi
     override func setUIColors() {
         tableView.reloadData()
         tableView.backgroundColor = colors.menuViewColor
-        tableView.separatorColor = colors.textColor
+        tableView.separatorColor = colors.subtitleTextColor
         
         loading.color = colors.loadingColor
         

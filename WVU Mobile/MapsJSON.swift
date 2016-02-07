@@ -26,11 +26,11 @@ class MapsJSON {
     init(code: String, name: String) {
         self.code = code
         self.name = name
-        web = "No website listed."
-        description = ""
+        web = "No data available."
+        description = "No data available."
         prt = ["name":"","distance":-1]
         parking = ["name":"","distance":-1]
-        phone = "No number listed."
+        phone = "No data available."
         address = ""
         campus = ""
         image = ""
@@ -80,14 +80,14 @@ class MapsJSON {
                             subtype = jsonDict["subtype"] as? NSString
                             wifi = jsonDict["wifi"] as? Int
                         
-                            if web == nil { web = "No website listed." }
-                            if description == nil { description = "" }
+                            if web == nil { web = "Not available." }
+                            if description == nil { description = "Not available." }
                             if prt == nil { prt = ["name":"","distance":-1] }
                             if parking == nil { parking = ["name":"","distance":-1] }
-                            if phone == nil { phone = "No number listed." }
-                            if address == nil { address = "" }
-                            if campus == nil { campus = "" }
-                            if image == nil { image = "" }
+                            if phone == nil { phone = "Not available." }
+                            if address == nil { address = "Not available." }
+                            if campus == nil { campus = "Not available." }
+                            if image == nil { image = "Not available." }
                             if subtype == nil { subtype = "WVU" }
                             if wifi == nil { wifi = 0 }
                         }

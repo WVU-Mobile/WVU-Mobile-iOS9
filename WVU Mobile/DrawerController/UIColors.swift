@@ -76,11 +76,14 @@ class UIColors: NSObject {
     override init() {
         super.init()
         self.toggleUIColors()
-        NSUserDefaults.standardUserDefaults().setBool(false, forKey: "nightMode")
     }
     
     func toggleNightMode(){
-        NSUserDefaults.standardUserDefaults().setBool(!NSUserDefaults.standardUserDefaults().boolForKey("nightMode"), forKey: "nightMode")
+        if (NSUserDefaults.standardUserDefaults().boolForKey("nightMode") == false) {
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "nightMode")
+        } else {
+            NSUserDefaults.standardUserDefaults().setBool(false, forKey: "nightMode")
+        }
     }
     
     class var sharedInstance: UIColors{

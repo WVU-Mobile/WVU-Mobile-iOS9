@@ -52,12 +52,14 @@ class NewsViewController: CenterViewController, UITableViewDelegate, UITableView
         /*
         Set up table view.
         */
-        tableView = UITableView(frame: CGRectMake(-0.25, 64, self.view.bounds.width + 0.25, self.view.bounds.height-64), style: UITableViewStyle.Plain)
+        tableView = UITableView(frame: CGRectMake(0, 64, self.view.bounds.width, self.view.bounds.height-64), style: UITableViewStyle.Plain)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        //tableView.separatorStyle = .None
-        tableView.separatorColor = colors.textColor
+        tableView.separatorInset = UIEdgeInsets.init(top: 0, left: 0, bottom: 0, right: 0)
+        tableView.layoutMargins = UIEdgeInsetsZero
+        tableView.preservesSuperviewLayoutMargins = false
+        
         tableView.rowHeight = 90.0
         tableView.showsVerticalScrollIndicator = false
         
@@ -160,7 +162,7 @@ class NewsViewController: CenterViewController, UITableViewDelegate, UITableView
         tableView.reloadData()
         loading.color = colors.loadingColor
         tableView.backgroundColor = colors.menuViewColor
-        tableView.separatorColor = colors.textColor
+        tableView.separatorColor = colors.subtitleTextColor
         super.setUIColors()
     }
     
