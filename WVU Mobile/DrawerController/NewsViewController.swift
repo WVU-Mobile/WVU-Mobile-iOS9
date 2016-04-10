@@ -66,7 +66,7 @@ class NewsViewController: CenterViewController, UITableViewDelegate, UITableView
         self.view.addSubview(self.tableView)
         
         rControl = UIRefreshControl(frame: CGRectMake(0,100,self.view.bounds.width,70.0))
-        rControl.addTarget(self, action: Selector("refresh"), forControlEvents: UIControlEvents.ValueChanged)
+        rControl.addTarget(self, action: #selector(NewsViewController.refresh), forControlEvents: UIControlEvents.ValueChanged)
         tableView.addSubview(rControl)
         rControl.layer.zPosition = self.rControl.layer.zPosition-1
         

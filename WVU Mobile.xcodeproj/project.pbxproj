@@ -45,7 +45,6 @@
 		9C2901C11B73F60200CF39B4 /* PRT.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9C2901C01B73F60200CF39B4 /* PRT.txt */; };
 		9C3596D91B704BB700572087 /* 1 - Campus PM.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9C3596D81B704BB700572087 /* 1 - Campus PM.txt */; };
 		9C534C491A79808600B2335F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C534C481A79808600B2335F /* AppDelegate.swift */; };
-		9C534C511A79808600B2335F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C534C4F1A79808600B2335F /* Main.storyboard */; };
 		9C534C531A79808600B2335F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C534C521A79808600B2335F /* Images.xcassets */; };
 		9C534C621A79808600B2335F /* WVU_MobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C534C611A79808600B2335F /* WVU_MobileTests.swift */; };
 		9C534C701A79876500B2335F /* Hamburger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C534C6C1A79876500B2335F /* Hamburger.swift */; };
@@ -127,7 +126,6 @@
 		9C534C431A79808600B2335F /* WVU Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WVU Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C534C471A79808600B2335F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C534C481A79808600B2335F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9C534C501A79808600B2335F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C534C521A79808600B2335F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9C534C5B1A79808600B2335F /* WVU MobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WVU MobileTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C534C601A79808600B2335F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -341,7 +339,6 @@
 			children = (
 				9C534C521A79808600B2335F /* Images.xcassets */,
 				4407B8771ACDC33200135960 /* LaunchScreen.xib */,
-				9C534C4F1A79808600B2335F /* Main.storyboard */,
 				9C534C471A79808600B2335F /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -472,6 +469,7 @@
 					};
 					9C534C5A1A79808600B2335F = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 4P5LM6HTJ7;
 						TestTargetID = 9C534C421A79808600B2335F;
 					};
 				};
@@ -508,7 +506,6 @@
 				9C69CE0C1B7136AE0017A1E8 /* 15 - Grafton Rd..txt in Resources */,
 				9C69CE041B7136AE0017A1E8 /* 6 - Gold Line.txt in Resources */,
 				9C69CE011B7136AE0017A1E8 /* 2 - DT PM Mall.txt in Resources */,
-				9C534C511A79808600B2335F /* Main.storyboard in Resources */,
 				9C2901C11B73F60200CF39B4 /* PRT.txt in Resources */,
 				9C69CE0B1B7136AE0017A1E8 /* 14 - Mtn. Heights.txt in Resources */,
 				9C69CE111B7136AE0017A1E8 /* 38 - Blue & Gold.txt in Resources */,
@@ -701,17 +698,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		9C534C4F1A79808600B2335F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9C534C501A79808600B2335F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		9C534C631A79808600B2335F /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -754,7 +740,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "aaf7e356-c424-43a6-ba46-b8fdf063672e";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -794,7 +780,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "-ObjC";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "aaf7e356-c424-43a6-ba46-b8fdf063672e";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -810,6 +796,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "WVU Mobile/Info.plist";
@@ -838,6 +826,8 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "WVU Mobile/Info.plist";
@@ -862,6 +852,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -877,6 +868,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wvu.WVU-Mobile";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -886,6 +878,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "WVU MobileTests/Info.plist";
@@ -897,6 +890,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wvu.WVU-Mobile";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WVU Mobile.app/WVU Mobile";
 			};
 			name = Release;

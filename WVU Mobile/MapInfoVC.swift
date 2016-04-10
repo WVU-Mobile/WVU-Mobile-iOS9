@@ -275,7 +275,7 @@ class MapInfoVC: MainViewController, UITableViewDelegate, UITableViewDataSource{
         
         let infoButton = UIButton(frame: (infoView.bounds))
         infoButton.setBackgroundImage(infoView.image, forState: UIControlState.Normal)
-        infoButton.addTarget(self, action: "walkingDirections", forControlEvents: UIControlEvents.TouchUpInside)
+        infoButton.addTarget(self, action: #selector(MapInfoVC.walkingDirections), forControlEvents: UIControlEvents.TouchUpInside)
         
         let infoButtonItem = UIBarButtonItem(customView: infoButton)
         

@@ -55,7 +55,6 @@ class RSSParser: NSObject, NSXMLParserDelegate {
             fdate = ""
         }
         
-        print(elementName)
     }
     
     func parser(parser: NSXMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
@@ -80,7 +79,6 @@ class RSSParser: NSObject, NSXMLParserDelegate {
             feeds.addObject(elements)
         }
         
-        print(elementName)
     }
     
     func parser(parser: NSXMLParser, foundCharacters string: String) {
@@ -95,7 +93,6 @@ class RSSParser: NSObject, NSXMLParserDelegate {
             fdate.appendString(string)
         }
         
-        print(string)
     }
     
     

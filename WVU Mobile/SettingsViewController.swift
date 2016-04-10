@@ -49,39 +49,39 @@ class SettingsViewController: CenterViewController, UITableViewDelegate, UITable
         tableView.showsVerticalScrollIndicator = false
         
         // Set up Night Mode Switch
-        self.nightSwitch.addTarget(self, action: "nightSwitchValueDidChange:", forControlEvents: .ValueChanged)
+        self.nightSwitch.addTarget(self, action: #selector(SettingsViewController.nightSwitchValueDidChange(_:)), forControlEvents: .ValueChanged)
         self.nightSwitch.onTintColor = colors.switchColor
         self.nightSwitch.on = NSUserDefaults.standardUserDefaults().boolForKey("nightMode")
 
         // Set up Ricky Button
         rickyButton.frame = CGRectMake(100, 100, 100, 40)
         rickyButton.setBackgroundImage(twitterImage, forState: UIControlState.Normal)
-        rickyButton.addTarget(self, action: "twitterButtonAction:", forControlEvents:.TouchUpInside)
+        rickyButton.addTarget(self, action: #selector(SettingsViewController.twitterButtonAction(_:)), forControlEvents:.TouchUpInside)
         
         // Set up Kate Button
         kateButton.frame = CGRectMake(100, 100, 100, 40)
         kateButton.setImage(twitterImage, forState: .Normal)
-        kateButton.addTarget(self, action: "twitterButtonAction:", forControlEvents:.TouchUpInside)
+        kateButton.addTarget(self, action: #selector(SettingsViewController.twitterButtonAction(_:)), forControlEvents:.TouchUpInside)
         
         // Set up Jeremy Button
         jeremyButton.frame = CGRectMake(100, 100, 100, 40)
         jeremyButton.setImage(twitterImage, forState: .Normal)
-        jeremyButton.addTarget(self, action: "twitterButtonAction:", forControlEvents:.TouchUpInside)
+        jeremyButton.addTarget(self, action: #selector(SettingsViewController.twitterButtonAction(_:)), forControlEvents:.TouchUpInside)
         
         // Set up Corey Button
         coreyButton.frame = CGRectMake(100, 100, 100, 40)
         coreyButton.setImage(twitterImage, forState: .Normal)
-        coreyButton.addTarget(self, action: "twitterButtonAction:", forControlEvents:.TouchUpInside)
+        coreyButton.addTarget(self, action: #selector(SettingsViewController.twitterButtonAction(_:)), forControlEvents:.TouchUpInside)
         
         // Set up Facebook Button
         facebookButton.frame = CGRectMake(100, 100, 100, 40)
         facebookButton.setImage(facebookImage, forState: .Normal)
-        facebookButton.addTarget(self, action: "facebookButtonAction:", forControlEvents:.TouchUpInside)
+        facebookButton.addTarget(self, action: #selector(SettingsViewController.facebookButtonAction(_:)), forControlEvents:.TouchUpInside)
         
         // Set up Twitter Button
         twitterButton.frame = CGRectMake(100, 100, 100, 40)
         twitterButton.setImage(twitterImage, forState: .Normal)
-        twitterButton.addTarget(self, action: "twitterButtonAction:", forControlEvents:.TouchUpInside)
+        twitterButton.addTarget(self, action: #selector(SettingsViewController.twitterButtonAction(_:)), forControlEvents:.TouchUpInside)
         
         self.view.addSubview(self.tableView)
         

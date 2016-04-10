@@ -24,7 +24,7 @@ class WebPageViewController: MainViewController, NSURLConnectionDelegate{
         let request = NSURLRequest(URL: requestURL!)
         webView.loadRequest(request)
         
-        let shareButton: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Action, target: self, action: "share")
+        let shareButton: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Action, target: self, action: #selector(WebPageViewController.share))
         self.navigationItem.rightBarButtonItem = shareButton
         
         self.view.addSubview(webView)

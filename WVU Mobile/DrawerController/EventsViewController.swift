@@ -81,9 +81,9 @@ class EventsViewController: CenterViewController, UITableViewDelegate, UITableVi
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.showsVerticalScrollIndicator = false
         
-        dayButton.addTarget(self, action: "click", forControlEvents: UIControlEvents.TouchUpInside)
-        forwardButton.addTarget(self, action: "forward", forControlEvents: UIControlEvents.TouchUpInside)
-        backButton.addTarget(self, action: "back", forControlEvents: UIControlEvents.TouchUpInside)
+        dayButton.addTarget(self, action: #selector(EventsViewController.click), forControlEvents: UIControlEvents.TouchUpInside)
+        forwardButton.addTarget(self, action: #selector(EventsViewController.forward), forControlEvents: UIControlEvents.TouchUpInside)
+        backButton.addTarget(self, action: #selector(EventsViewController.back), forControlEvents: UIControlEvents.TouchUpInside)
 
         self.view.addSubview(self.tableView)
         
@@ -99,7 +99,7 @@ class EventsViewController: CenterViewController, UITableViewDelegate, UITableVi
         }
         
         rControl = UIRefreshControl(frame: CGRectMake(0,100,self.view.bounds.width,70.0))
-        rControl.addTarget(self, action: Selector("refresh"), forControlEvents: UIControlEvents.ValueChanged)
+        rControl.addTarget(self, action: #selector(EventsViewController.refresh), forControlEvents: UIControlEvents.ValueChanged)
         tableView.addSubview(rControl)
         rControl.layer.zPosition = self.rControl.layer.zPosition-1
         

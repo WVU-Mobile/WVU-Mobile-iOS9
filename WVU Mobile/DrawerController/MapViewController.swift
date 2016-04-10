@@ -212,7 +212,7 @@ class MapViewController: CenterViewController, CLLocationManagerDelegate, GMSMap
         tableView.dataSource = self
         tableView.backgroundColor = colors.alpha
         
-        gesture = UITapGestureRecognizer(target: self, action: "dismiss")
+        gesture = UITapGestureRecognizer(target: self, action: #selector(MapViewController.dismiss))
         self.view.addGestureRecognizer(gesture)
         
         super.viewDidLoad()

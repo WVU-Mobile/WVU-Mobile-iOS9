@@ -19,7 +19,7 @@ class MainViewController: ViewController {
         /*
         Toggle night mode
         */
-        let tapGesture = UITapGestureRecognizer(target: self, action: "toggleNightMode")
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(MainViewController.toggleNightMode))
         tapGesture.numberOfTapsRequired = 3
         self.navigationController?.navigationBar.addGestureRecognizer(tapGesture)
     }

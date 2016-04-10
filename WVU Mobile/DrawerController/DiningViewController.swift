@@ -65,7 +65,6 @@ class DiningViewController: CenterViewController, UITableViewDelegate, UITableVi
         tableView.dataSource = self
         tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cell")
         //tableView.separatorStyle = .None
-        tableView.separatorColor = colors.textColor
         tableView.rowHeight = 100.0
         tableView.backgroundColor = colors.menuViewColor
         tableView.showsVerticalScrollIndicator = false
@@ -85,7 +84,7 @@ class DiningViewController: CenterViewController, UITableViewDelegate, UITableVi
         
         let infoButton = UIButton(frame: (infoView.bounds))
         infoButton.setBackgroundImage(infoView.image, forState: UIControlState.Normal)
-        infoButton.addTarget(self, action: "loadMountyBounty", forControlEvents: UIControlEvents.TouchUpInside)
+        infoButton.addTarget(self, action: #selector(DiningViewController.loadMountyBounty), forControlEvents: UIControlEvents.TouchUpInside)
         
         let infoButtonItem = UIBarButtonItem(customView: infoButton)
         
@@ -205,7 +204,7 @@ class DiningViewController: CenterViewController, UITableViewDelegate, UITableVi
     override func setUIColors() {
         self.tableView.backgroundColor = colors.menuViewColor
         self.tableView.reloadData()
-        tableView.separatorColor = colors.textColor
+        tableView.separatorColor = colors.subtitleTextColor
         super.setUIColors()
     }
     

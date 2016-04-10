@@ -88,7 +88,7 @@ class LineViewController: MainViewController, UITableViewDelegate, UITableViewDa
         
         let infoButton = UIButton(frame: (infoView.bounds))
         infoButton.setBackgroundImage(infoView.image, forState: UIControlState.Normal)
-        infoButton.addTarget(self, action: "loadTwitter", forControlEvents: UIControlEvents.TouchUpInside)
+        infoButton.addTarget(self, action: #selector(LineViewController.loadTwitter), forControlEvents: UIControlEvents.TouchUpInside)
         
         let infoButtonItem = UIBarButtonItem(customView: infoButton)
         

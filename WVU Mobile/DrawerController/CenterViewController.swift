@@ -25,7 +25,7 @@ class CenterViewController: MainViewController {
         
         let menuButton = UIButton(frame: (menuView.bounds))
         menuButton.setBackgroundImage(menuView.image, forState: UIControlState.Normal)
-        menuButton.addTarget(self, action: "leftDrawerButtonPress:", forControlEvents: UIControlEvents.TouchUpInside)
+        menuButton.addTarget(self, action: #selector(CenterViewController.leftDrawerButtonPress(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         
         let menuButtonItem = UIBarButtonItem(customView: menuButton)
         

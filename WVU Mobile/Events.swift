@@ -30,7 +30,7 @@ class Events: NSObject {
         let parser: RSSParser = RSSParser().initWithURL(nsURL) as! RSSParser
         let feed = parser.feeds
         
-        for var i = 0; i < feed.count; i++ {
+        for i in 0 ..< feed.count {
             let fTitle: String = feed[i].objectForKey("title") as! String
             let fDescript: String = feed[i].objectForKey("description") as! String
             let fLink: String = feed[i].objectForKey("link") as! String

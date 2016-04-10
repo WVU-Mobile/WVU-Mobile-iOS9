@@ -30,14 +30,14 @@ class DiningJSON {
         year = components.year
         error = false
         
-        pullJSON()
+        pullJSON( month, day: day, year: year)
         
-        if error == false {
-            setupArrays()
-        }
+    
     }
     
-    func pullJSON() {
+    func pullJSON(month: Int, day: Int, year: Int) {
+        menus = [:]
+        key = []
         let urlPath: String = "http://diningmenuservice.wvu.edu/\(locationID)/\(month)/\(day)/\(year)/1410376600000/?callback="
         print(urlPath)
         let url = NSURL(string: urlPath)!
@@ -54,6 +54,13 @@ class DiningJSON {
                 print("There was an error pulling the PRT JSON data.")
             }
         }
+        if error == false {
+            setupArrays()
+        }
+    }
+    
+    func pullJSON() {
+        self.pullJSON(month, day: day, year: year)
     }
     
     func setupArrays() {
@@ -65,7 +72,7 @@ class DiningJSON {
         let healthyUDinnerSection = NSMutableArray()
         
         //Loop through every dictionary in the JSON feed
-        for var i = 0; i < jsonResult.count; i++ {
+        for i in 0 ..< jsonResult.count {
             let dict = jsonResult[i] as! NSDictionary
             //switch on type of menu items
             let d = dict["meal"] as! NSString
@@ -126,4 +133,5 @@ class DiningJSON {
             key.addObject("HEALTHY \"U\" DINNER")
         }
     }
+    
 }
